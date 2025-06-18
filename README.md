@@ -35,12 +35,12 @@ cd FileZipperHoffman
 
 ## Usage
 📦 Compress a File
-Option 1 – From encoder folder:
+1. Option 1 – From encoder folder:
 ```bash
 cd src/encoder
 python huffman_encoder.py compress <input_file.txt>
 ```
-Option 2 – From src folder:
+2. Option 2 – From src folder:
 ```bash
 cd src
 python -B main.py compress <input_file.txt> <output_file.txt>
@@ -48,21 +48,21 @@ python -B main.py compress <input_file.txt> <output_file.txt>
 The -B flag disables Python bytecode file creation.
 
 🔓 Decompress a File
-Option 1 – From decoder folder:
+1. Option 1 – From decoder folder:
 ```bash
 cd src/decoder
 python huffman_decoder.py decompress <compressed_file.txt> <huffman_codes_file.txt>
 ```
-Option 2 – From src folder:
+2. Option 2 – From src folder:
 ```bash
 cd src
 python -B main.py decompress <compressed_file.txt> <decoded_file.txt>
 ```
 
 ## Example Files
-input_file.txt: Example input for testing.
-output_file.txt: Output of compression.
-decoded_file.txt: File output after decompression (should match original).`
+- input_file.txt: Example input for testing.
+- output_file.txt: Output of compression.
+- decoded_file.txt: File output after decompression (should match original).`
 
 ## Testing
 Run automated test cases from the src directory:
